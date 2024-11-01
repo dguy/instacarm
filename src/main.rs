@@ -90,7 +90,7 @@ fn main() {
 }
 
 fn write_to_file(following: &mut Vec<Relation>, path: &str) {
-    let mut file = File::create(path).unwrap();
+    let  file = File::create(path).unwrap();
     let mut writer = BufWriter::new(file);
 
     for x in following {
